@@ -59,7 +59,7 @@
   ]},
   { "hdr": "7E4", "cmd": {"22": "41AB"}, "freq": 10,
   "signals": [
-    {"id": "BOLT_DISTANCE_TRAVELED_SINCE_LAST_CHARGE", "path": "Battery", "fmt": { "len": 32, "max": 2048, "min": 0, "div": 64, "unit": "miles" }, "name": "Distance traveled since last full charge",}
+    {"id": "BOLT_DISTANCE_TRAVELED_SINCE_LAST_CHARGE", "path": "Battery", "fmt": { "len": 32, "max": 2048, "min": 0, "div": 64, "unit": "kilometers" }, "name": "Distance traveled since last full charge",}
   ]},
 { "hdr": "7E4", "rax": "7EC", "cmd": {"22": "8334"}, "freq": 1,
   "signals": [
@@ -454,7 +454,7 @@
   {"id": "BOLT_HVBAT_CMU_VOLT", "path": "Battery.Modules", "matchingRegex": "BOLT_HVBAT_(CMU\\d+)_VOLT", "name": "HV battery pack voltage", "suggestedMetricGroup": "batteryModulesVoltage"}
 ],
 "synthetics": [
-  { "id": "BOLT_EFFICIENCY", "path": "Battery", "name": "Efficiency since last charge (from distance/energy consumption)", "max": 100, "min": 0, "unit": "milesPerKilowattHour", "formula": {
+  { "id": "BOLT_EFFICIENCY", "path": "Battery", "name": "Efficiency since last charge (from distance/energy consumption)", "max": 100, "min": 0, "unit": "kilometersPerKilowattHour", "formula": {
     "op": "ratio", "a": "BOLT_DISTANCE_TRAVELED_SINCE_LAST_CHARGE", "b": "BOLT_ENERGY_CONSUMED_SINCE_LAST_CHARGE"
   }}
 ]
