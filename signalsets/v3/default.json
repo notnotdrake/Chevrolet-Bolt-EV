@@ -55,7 +55,7 @@
   ]},
   { "hdr": "7E4", "cmd": {"22": "4470"}, "freq": 10,
   "signals": [
-    {"id": "BOLT_ENERGY_CONSUMED_SINCE_LAST_CHARGE", "path": "Battery", "fmt": { "len": 16, "max": 2048, "min": 0, "div": 10000, "unit": "kilowattHours" }, "name": "Energy consumed since last full charge",}
+    {"id": "BOLT_ENERGY_CONSUMED_SINCE_LAST_CHARGE", "path": "Battery", "fmt": { "len": 16, "max": 2048, "min": 0, "div": 10, "unit": "kilowattHours" }, "name": "Energy consumed since last full charge",}
   ]},
   { "hdr": "7E4", "cmd": {"22": "41AB"}, "freq": 10,
   "signals": [
