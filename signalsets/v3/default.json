@@ -59,7 +59,7 @@
   ]},
   { "hdr": "7E4", "cmd": {"22": "41AB"}, "freq": 10,
   "signals": [
-    {"id": "BOLT_DISTANCE_TRAVELED_SINCE_LAST_CHARGE", "path": "Battery", "fmt": { "len": 32, "max": 2048, "min": 0, "div": 64, "unit": "kilometers" }, "name": "Distance traveled since last full charge",}
+    {"id": "BOLT_DISTANCE_TRAVELED_SINCE_LAST_CHARGE", "path": "Battery", "fmt": { "len": 32, "max": 2048, "min": 0, "div": 39.776, "unit": "miles" }, "name": "Distance traveled since last full charge",}
   ]},
 { "hdr": "7E4", "rax": "7EC", "cmd": {"22": "8334"}, "freq": 1,
   "signals": [
