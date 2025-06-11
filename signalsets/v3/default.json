@@ -49,6 +49,10 @@
         }}
     }
   ]},
+  { "hdr": "7E4", "cmd": {"22": "41A6"}, "freq": 1,
+  "signals": [
+    {"id": "BOLT_HVBAT_EST_RANGE", "path": "Battery", "fmt": { "len": 16, "max": 600, "min": 0, "div": 64, "unit": "kilometers" }, "name": "HV battery estimated range", "suggestedMetric": "electricRange"}
+  ]},
 { "hdr": "7E4", "rax": "7EC", "cmd": {"22": "8334"}, "freq": 1,
   "signals": [
     {"id": "BOLT_HVBAT_SOC_DISPLAY", "path": "Battery", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "HV battery charge", "suggestedMetric": "stateOfCharge"}
