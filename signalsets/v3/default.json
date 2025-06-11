@@ -437,6 +437,10 @@
   "signals": [
     {"id": "BOLT_HVBAT_CMU96_VOLT", "path": "Battery.Modules.96", "fmt": { "len": 16, "max": 5, "mul": 5, "div": 65535, "unit": "volts" }, "name": "HV battery module 96 voltage"}
   ]}
+{ "hdr": "7E4", "rax": "7EC", "cmd": {"22": "41AB"}, "freq": 0.1,
+  "signals": [
+    {"id": "BOLT_LIFETIME_ECON", "path": "Movement", "fmt": {"len": 16, "max": 655.35, "div": 100, "unit": "kilometersPerKwh"}, "name": "Lifetime energy economy"}
+  ]}
 ],
 "signalGroups": [
   {"id": "BOLT_HVBAT_CMU_VOLT", "path": "Battery.Modules", "matchingRegex": "BOLT_HVBAT_(CMU\\d+)_VOLT", "name": "HV battery pack voltage", "suggestedMetricGroup": "batteryModulesVoltage"}
