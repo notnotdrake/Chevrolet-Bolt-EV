@@ -454,7 +454,7 @@
   {"id": "BOLT_HVBAT_CMU_VOLT", "path": "Battery.Modules", "matchingRegex": "BOLT_HVBAT_(CMU\\d+)_VOLT", "name": "HV battery pack voltage", "suggestedMetricGroup": "batteryModulesVoltage"}
 ],
 "synthetics": [
-  { "id": "BOLT_EFFICIENCY", "path": "Battery", "name": "Efficiency since last charge (from distance/energy consumption)", "max": 100, "min": 0, "unit": "kilometersPerKilowattHour", "formula": {
+  { "id": "BOLT_EFFICIENCY", "path": "Battery", "name": "Efficiency since last charge (from distance/energy consumption)", "max": 100, "min": 0, "unit": "milesPerKilowattHour", "formula": {
     "op": "ratio", "a": "BOLT_DISTANCE_TRAVELED_SINCE_LAST_CHARGE", "b": "BOLT_ENERGY_CONSUMED_SINCE_LAST_CHARGE"
   }}
 ]
